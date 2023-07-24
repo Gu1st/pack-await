@@ -1,0 +1,41 @@
+{
+  "name": "@harexs/pack-await",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Don't need use try..catch, Promise to package await results",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "source": "src/index.ts",
+  "author": {
+    "name": "Harexs",
+    "email": "con1y@qq.com"
+  },
+  "license": "MIT",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "login": "npm login --registry https://registry.npmjs.org/",
+    "pub": "npm publish --access public --registry https://registry.npmjs.org/",
+    "commit": "git add . && git-cz",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-typescript": "^7.22.5",
+    "@jest/globals": "^29.6.1",
+    "babel-jest": "^29.6.1",
+    "git-cz": "^4.9.0",
+    "jest": "^29.6.1",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1"
+  }
+}
