@@ -11,7 +11,7 @@ $ npm install @harexs/pack-await
 ## Usage
 
 ```js
-import pAwait from "@harexs/style-log";
+import pAwait from "@harexs/pack-await";
 
 const p1 = () => Promise.reject("harexs");
 const [res, err] = pAwait(p1()); // [null,'harexs']
